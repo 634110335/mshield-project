@@ -178,6 +178,7 @@ public class ConsultFragment extends Fragment {
         initData();
         return inflate;
     }
+    //检查是否有新的招标通知
     public void checkBindIpass(){
         String indata = Constants.APP_ID + "#" + ("".equals(mSaveBindPhone) ? mSavePhone : mSaveBindPhone) + "#" + ("".equals(mSaveType) ? "HD" : mSaveType);
         final String sign = SecurityUtil.signature(Constants.APP_PRIVATE_KEY, indata);
