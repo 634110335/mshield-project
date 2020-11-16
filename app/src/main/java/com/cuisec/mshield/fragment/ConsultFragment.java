@@ -168,6 +168,7 @@ public class ConsultFragment extends Fragment {
         initData3();
         checkBindIpass();
         initCount();
+        //开启线程轮训查看，每隔十分钟请求一下接口
         mThread = new Thread(mRunnable);
         mThread.start();
         //判断是否有新的通知
