@@ -59,6 +59,7 @@ public class MyApplication extends MultiDexApplication {
 
         // 安装tinker
         //安装tinker
+        //安装tinker
         Beta.installTinker();
     }
 
