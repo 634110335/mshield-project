@@ -170,6 +170,7 @@ public class ConsultFragment extends Fragment {
         initCount();
         mThread = new Thread(mRunnable);
         mThread.start();
+        //判断是否有新的通知
         if (!(mIpassTheadNoticeBean != null && mIpassTheadNoticeBean.getMsg().equals("未绑定用户！"))){
             startThread();
         }else if (!(mCheckBind != null && mCheckBind.getMsg().equals("未绑定用户！"))){
