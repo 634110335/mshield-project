@@ -228,6 +228,7 @@ public class ConsultFragment extends Fragment {
             }
         });
     }
+    //检查用户是否有新的ipass订单
     private void initCount() {
         String indata = Constants.APP_ID + "#" + ("".equals(mSaveBindPhone) ? mSavePhone : mSaveBindPhone) + "#" + ("".equals(mSaveType) ? "HD" : mSaveType);
         final String sign = SecurityUtil.signature(Constants.APP_PRIVATE_KEY, indata);
