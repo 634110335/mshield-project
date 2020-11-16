@@ -34,6 +34,7 @@ import okhttp3.Response;
 
 /**
  * Created by licz on 2018/5/25.
+ * 初始化application
  */
 
 public class MyApplication extends MultiDexApplication {
