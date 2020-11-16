@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/app_bg"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/home_banner_bg"/>
+    </RelativeLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/normal_white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cert_apply_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h1"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shap_call"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="horizontal">
+
+           <!-- <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_sep"/>-->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_50"
+                android:src="@mipmap/ico_iphoto"/>
+            <TextView
+                android:id="@+id/cert_apply_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13391826151"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h4"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_gravity="center_vertical"/>
+            <!--<ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_sep"/>-->
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shap_call"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <!--<ImageView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_sep"/>-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_50"
+                android:src="@mipmap/ico_id"/>
+            <TextView
+                android:id="@+id/cert_apply_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h4"
+                android:text=""
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_gravity="center_vertical"/>
+           <!-- <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_sep"/>-->
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/cert_apply_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/image_login_btn"
+            android:text="立即申请"
+            android:textSize="@dimen/h4"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_15"
+    >
+    <ImageView
+        android:id="@+id/ipass_read_image"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_below="@+id/ipass_content"
+        />
+   <!-- <ImageView
+        android:id="@+id/ipass_not_read_image"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_below="@+id/ipass_content"
+        android:src="@drawable/ipass_read"
+        android:visibility="gone"
+        />-->
+    <TextView
+        android:id="@+id/ipass_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="办理iPASS续费业务"
+        android:textSize="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/ipass_read_image"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@mipmap/ico_sep" />
+</RelativeLayout>

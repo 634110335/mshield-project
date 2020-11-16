@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="@dimen/dp_360"
+        android:layout_height="@dimen/dp_260"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@mipmap/home_image"
+            android:scaleType="fitXY"
+            android:layout_height="240dp">
+            <TextView
+                android:id="@+id/cert_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CA证书"
+                android:textSize="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_140"
+                android:layout_marginTop="@dimen/dp_40"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/cert_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启网络真时代"
+                android:textSize="@dimen/dp_30"
+                android:layout_below="@+id/cert_bg"
+                android:layout_marginLeft="@dimen/dp_80"
+                android:textColor="@color/white"
+                />
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/login_login"
+                android:src="@mipmap/home_banner"/>-->
+
+            <LinearLayout
+                android:id="@+id/home_scan_rl"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:gravity="center"
+                android:background="@drawable/shape_login"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/code_logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_scan"
+                    android:textSize="@dimen/h3"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/home_mine_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@mipmap/ico_mine"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:background="@drawable/shape_login"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/home_cert_apply_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_apply"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_apply"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_cert_detail_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_white_bg"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_detail"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_detail"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+               android:id="@+id/home_cert_update_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_update"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_update"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/home_cert_revoke_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_revoke"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_revoke"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/home_cert_set_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:background="@drawable/home_white_bg"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_set"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_set"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/home_cert_log_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/ico_cert_log_logo"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_log"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+       <!-- <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ico_cert_set"
+                    android:drawablePadding="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_set"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_white_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ico_cert_apply"
+                    android:drawablePadding="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_cert_log"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/font_black"
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+-->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/gesture_verify_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mine_security_gesture_verify_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="请绘制手势密码"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/h4"/>
+
+        <com.cuisec.mshield.widget.lock.LockPatternView
+            android:id="@+id/gesture_verify_lock_pattern"
+            android:layout_width="288dp"
+            android:layout_height="288dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/gesture_verify_forget_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:background="#00000000"
+            android:text="重新登录"
+            android:textSize="@dimen/h5"
+            android:textColor="@color/main_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finger_verify_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.cuisec.mshield.widget.CircleImageView
+            android:id="@+id/finger_logo_rl"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/home_logo"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/finger_verify_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ico_zhiwen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="点击进行指纹解锁"
+                android:textSize="@dimen/h5"
+                android:textColor="@color/main_color"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/finger_verify_forget_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:background="#00000000"
+            android:text="重新登录"
+            android:textSize="@dimen/h5"
+            android:textColor="@color/main_color" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

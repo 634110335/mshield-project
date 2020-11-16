@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DashedCircularProgress">
+        <attr name="external_color" format="color" />
+        <attr name="base_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="max" format="float" />
+        <attr name="min" format="float" />
+        <attr name="progress_icon" format="reference" />
+        <attr name="duration" format="integer" />
+        <attr name="progress_stroke_width" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LockPatternView">
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SignaturePad">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="penColor" format="color" />
+        <attr name="velocityFilterWeight" format="float" />
+    </declare-styleable>
+    <declare-styleable name="Bottom_tab">
+        <attr name="changeDrawable" format="boolean"/>
+        <attr name="bottomNum" format="integer"/>
+        <attr name="changeTextColor" format="boolean"/>
+        <attr name="textSelectedColor" format="color"/>
+        <attr name="textUnSelectedColor" format="color"/>
+        <attr name="bottomTextSize" format="dimension"/>
+        <attr name="textFirst" format="string"/>
+        <attr name="textSecond" format="string"/>
+        <attr name="textThird" format="string"/>
+        <attr name="textFourth" format="string"/>
+        <attr name="textFifth" format="string"/>
+        <attr name="imageSelectedFirst" format="reference"/>
+        <attr name="imageUnSelectedFirst" format="reference"/>
+        <attr name="imageSelectedSecond" format="reference"/>
+        <attr name="imageUnSelectedSecond" format="reference"/>
+        <attr name="imageSelectedThird" format="reference"/>
+        <attr name="imageUnSelectedThird" format="reference"/>
+        <attr name="imageSelectedFourth" format="reference"/>
+        <attr name="imageUnSelectedFourth" format="reference"/>
+        <attr name="imageSelectedFifth" format="reference"/>
+        <attr name="imageUnSelectedFifth" format="reference"/>
+    </declare-styleable>
+    <!-- 搜索框 -->
+    <declare-styleable name="kylin_search_style">
+        <attr name="img_src" format="reference"/><!-- 图片地址 -->
+        <attr name="img_size" format="dimension"/><!-- 图片大小 -->
+        <attr name="img_visibility" format="boolean"/><!-- 图片显示/隐藏 -->
+        <attr name="show_location" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="2"/>
+            <enum name="centre" value="1"/>
+        </attr>
+        <attr name="edt_hint" format="string"/><!-- 提示文字 -->
+        <attr name="edt_size" format="dimension"/><!-- 提示文字大小 -->
+        <attr name="edt_hint_color" format="color"/><!-- 提示文字的颜色 -->
+        <attr name="search_backgroup" format="reference"/><!-- 搜索框背景 -->
+        <attr name="search_padding" format="reference"/><!-- 搜索框背景 -->
+    </declare-styleable>
+    <!--搜索历史-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

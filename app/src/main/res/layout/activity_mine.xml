@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_240"
+            android:background="@drawable/login_bg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_140"
+                android:textSize="@dimen/dp_20"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="个人信息"/>
+           <!-- <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@mipmap/app_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_banner_bg" />-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <com.cuisec.mshield.widget.CircleImageView
+                android:id="@+id/mine_avatar_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ico_avatar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mine_nick_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mine_not_login"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/h3" />
+
+                <ImageView
+                    android:id="@+id/mine_phone_rz_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/mine_nick_tv"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ico_rz_01"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mine_auth_rz_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/mine_phone_rz_iv"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ico_rz_02"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mine_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h3"
+                android:visibility="visible" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_260"
+                android:background="@drawable/shape_login"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mine_auth_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_safe"
+                    android:text="@string/mine_auth" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@mipmap/ico_sep" />
+
+                <TextView
+                    android:id="@+id/mine_safe_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_auth"
+                    android:text="@string/mine_safe" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@mipmap/ico_sep" />
+
+                <TextView
+                    android:id="@+id/mine_seal_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_seal"
+                    android:text="@string/mine_seal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@mipmap/ico_sep" />
+
+                <TextView
+                    android:id="@+id/mine_msg_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_msg"
+                    android:text="@string/mine_msg" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@mipmap/ico_sep" />
+
+                <TextView
+                    android:id="@+id/mine_about_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_about"
+                    android:text="@string/mine_about" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:id="@+id/mine_seal_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_seal"
+                    android:text="@string/mine_seal" />-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+               <!-- <TextView
+                    android:id="@+id/mine_msg_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_msg"
+                    android:text="@string/mine_msg" />-->
+
+
+
+               <!-- <TextView
+                    android:id="@+id/mine_about_tv"
+                    style="@style/MineTextView"
+                    android:layout_height="50dp"
+                    android:drawableEnd="@mipmap/ico_arrow_r"
+                    android:drawableStart="@mipmap/ico_my_about"
+                    android:text="@string/mine_about" />
+-->
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

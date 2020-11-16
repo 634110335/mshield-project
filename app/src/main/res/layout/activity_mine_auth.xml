@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/auth_id_tip"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/h5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_260"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/auth_name"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h5"/>
+
+            <EditText
+                android:id="@+id/mine_auth_name_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="@string/auth_name_hint"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h5"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/SepLineView"
+            android:layout_marginLeft="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@mipmap/ico_xjt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/auth_id_type"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/h5"/>
+
+                <EditText
+                    android:id="@+id/mine_auth_id_type_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:focusable="false"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="@string/auth_id_type_hint"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/h5" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/SepLineView"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/auth_id"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h5"/>
+
+            <EditText
+                android:id="@+id/mine_auth_id_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="@string/auth_id_hint"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h5"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/mine_auth_submit_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/dp_240"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/image_login_btn"
+            android:text="@string/auth_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h5"/>
+    </LinearLayout>
+
+
+</LinearLayout>

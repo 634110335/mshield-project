@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mine_security_create_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="绘制解锁图案"
+        android:gravity="center"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/h4"/>
+
+    <com.cuisec.mshield.widget.lock.LockPatternView
+        android:id="@+id/mine_security_create_lock_pattern"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/mine_security_create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:text="重新设置"
+        android:textSize="@dimen/h5"
+        android:textColor="@color/white_gray"
+        android:visibility="gone"/>
+
+</RelativeLayout>

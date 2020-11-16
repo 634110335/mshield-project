@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login_pop_temp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="临时登录"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="@dimen/h5"
+            android:background="@color/main_color"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/choose_photo_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/select_camera_tv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/camera"
+                android:textSize="@dimen/h4"
+                android:textColor="@color/font_black"/>
+
+            <View style="@style/SepLineView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:id="@+id/select_photo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/photo"
+                android:textSize="@dimen/h4"
+                android:textColor="@color/font_black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/select_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/choose_photo_bg"
+            android:text="@string/app_cancel"
+            android:textSize="@dimen/h4"
+            android:textColor="@color/font_black"/>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/choose_photo_bg"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/upload_image"-->
+            <!--android:textColor="@color/font_black"-->
+            <!--android:textSize="@dimen/h3" />-->
+
+        <!--<View style="@style/SepLineView"-->
+            <!--android:layout_marginTop="20dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/select_photo_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/photo"-->
+            <!--android:textSize="@dimen/h4" />-->
+
+        <!--<View style="@style/SepLineView"-->
+            <!--android:layout_marginLeft="20dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/select_camera_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/camera"-->
+            <!--android:textSize="@dimen/h4" />-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

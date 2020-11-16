@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/safe_pin_et"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/safe_pin_input_old"
+            android:inputType="textPassword"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h5" />
+
+        <View
+            style="@style/SepLineView"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/safe_pin_new_et"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/safe_pin_set_new"
+            android:inputType="textPassword"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h5" />
+
+        <View
+            style="@style/SepLineView"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/safe_pin_re_new_et"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/safe_pin_sure_new"
+            android:inputType="textPassword"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/ico_tips" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/safe_pin_tip"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/h5" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/safe_pin_ok_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_bg"
+        android:text="@string/app_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h4" />
+
+</LinearLayout>

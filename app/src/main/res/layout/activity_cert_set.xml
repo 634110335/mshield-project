@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/cert_set_pin_manager"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/h5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cert_set_pin_verify"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableRight="@mipmap/ico_arrow_r"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/cert_set_pin_verify"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/ico_sep" />
+
+        <TextView
+            android:id="@+id/cert_set_pin_change"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableRight="@mipmap/ico_arrow_r"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/cert_set_pin_change"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h4" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/ico_sep" />
+
+        <TextView
+            android:id="@+id/cert_set_pin_unlock"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableRight="@mipmap/ico_arrow_r"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/cert_set_pin_unlock"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h4" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/cert_set_sign"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/h5" />
+
+    <LinearLayout
+        android:id="@+id/cert_set_sign_lock_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/cert_set_sign_finger"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/h4" />
+
+            <Button
+                android:id="@+id/cert_set_sign_lock_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/switch_off" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/ico_sep" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cert_set_sign_free"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/h4" />
+
+        <Button
+            android:id="@+id/cert_set_sign_free_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/switch_off" />
+    </RelativeLayout>
+
+</LinearLayout>

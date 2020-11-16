@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">手机盾</string>
+    <string name="app_welcome_enter">马上体验</string>
+    <string name="app_exit_tip">再按一次退出程序</string>
+    <string name="app_tip">提示</string>
+    <string name="app_ok">确定</string>
+    <string name="ipass_back">返回</string>
+    <string name="ipass_bind">立即绑定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_finish">完成</string>
+    <string name="app_share">分享</string>
+    <string name="app_success">提交成功</string>
+    <string name="app_error">系统异常</string>
+    <string name="app_network_getting">网络请求中…</string>
+    <string name="app_network_error">网络无法连接</string>
+    <string name="app_scan">扫一扫</string>
+    <string name="app_clear">清空</string>
+    <string name="app_no_support">暂不支持</string>
+
+    <string name="app_slogan">改变签约方式\n让工作更简单</string>
+
+    <!--手机号码-->
+    <string name="mobile_number">手机号码</string>
+    <string name="mobile_tip">请输入手机号码</string>
+    <string name="mobile_error">手机号码错误</string>
+    <string name="mobile_change_success">修改手机成功</string>
+
+    <!--密码-->
+    <string name="pwd_tip">请输入密码</string>
+    <string name="pwd_tip_1">请输入8-16位数字、字母组合密码</string>
+    <string name="pwd_low">密码长度不能低于8位</string>
+    <string name="pwd_comb">请输入字母和数字组合密码</string>
+    <string name="pwd_re_tip">请再次输入密码</string>
+    <string name="pwd_old_tip">请输入现有密码</string>
+    <string name="pwd_new_msg">新密码</string>
+    <string name="pwd_new_tip">请输入新密码</string>
+    <string name="pwd_re_new_msg">确认新密码</string>
+    <string name="pwd_re_new_tip">请再次输入新密码</string>
+    <string name="pwd_not_match">两次密码不一致</string>
+    <string name="pwd_reset_success">找回密码成功</string>
+    <string name="pwd_change">更改密码</string>
+    <string name="pwd_change_success">更改密码成功</string>
+    <string name="pwd_get_back">找回密码</string>
+
+
+    <!--验证码-->
+    <string name="code_msg">验证码</string>
+    <string name="code_tip">请输入短信验证码</string>
+    <string name="code_get">获取验证码</string>
+    <string name="code_re_get">重新获取</string>
+
+    <string name="temp_auth_code_tip">请输入临时登录授权码</string>
+
+    <!--login-->
+    <string name="login_phone_hint">请输入手机号码</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_sms_code_hint">请输入短信验证码</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">注册新用户</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_social_account">使用社交账号一键验证</string>
+    <string name="login_re_login_tip">点击确定将清除登录状态，需要重新进行登录！</string>
+
+    <!--register-->
+    <string name="register_register">注册</string>
+    <string name="register_agree">我已阅读并同意</string>
+    <string name="register_server">服务条款</string>
+    <string name="register_success">注册成功</string>
+
+    <!--forgot-->
+    <string name="forgot_success">找回密码成功</string>
+
+    <!--home-->
+    <string name="home_cert_apply">证书申请</string>
+    <string name="home_cert_detail">证书查看</string>
+    <string name="home_cert_update">证书更新</string>
+    <string name="home_cert_revoke">证书注销</string>
+    <string name="home_cert_set">证书设置</string>
+    <string name="home_cert_log">使用日志</string>
+    <string name="home_scan">扫一扫</string>
+
+    <!--证书申请-->
+    <string name="cert_sq">证书申请</string>
+    <string name="cert_lksq">立刻申请</string>
+    <string name="cert_applying">证书申请中…</string>
+    <string name="cert_save_success">保存证书成功！</string>
+    <string name="cert_save_failed">保存证书失败！</string>
+    <string name="cert_exist_tip">已有数字证书，点击确定查看证书的详细信息！</string>
+    <string name="cert_no_tip">您还没有数字证书，请先申请证书！</string>
+
+    <string name="cert_ck">证书查看</string>
+
+    <!--证书更新-->
+    <string name="cert_gx">证书更新</string>
+    <string name="cert_gx_tip">证书已失效，请先进行证书更新!</string>
+    <string name="cert_gx_1">获取证书失败!</string>
+    <string name="cert_gx_success">证书更新成功！</string>
+    <string name="cert_gx_failed">证书更新失败！</string>
+
+    <!--cert revoke-->
+    <string name="cert_revoke_tip">确认要注销您的证书吗？</string>
+    <string name="cert_revoke_revoke">注销</string>
+    <string name="cert_revoke_warm">请谨慎操作，注销后您的证书将不能使用。如果要使用，请重新申请证书。</string>
+
+    <!--cert set-->
+    <string name="cert_sz">证书设置</string>
+    <string name="cert_set_pin_manager">证书密码管理</string>
+    <string name="cert_set_pin_verify">验证证书密码</string>
+    <string name="cert_set_pin_change">修改证书密码</string>
+    <string name="cert_set_pin_unlock">找回证书密码</string>
+    <string name="cert_set_sign">数字签名</string>
+    <string name="cert_set_sign_pin">签名设置</string>
+    <string name="cert_set_sign_finger">指纹签名</string>
+    <string name="cert_set_sign_free">免密签名</string>
+
+    <!--证书注销-->
+    <string name="cert_zx">证书注销</string>
+    <string name="cert_zx_success">注销成功</string>
+    <string name="cert_zx_failed">注销失败</string>
+    <string name="cert_zx_tip">请确认是否注销证书？ 证书注销后需要重新申请！</string>
+
+    <string name="cert_pin_no_ok">免密签名设置成功</string>
+    <string name="cert_pin_no_fail">免密签名设置失败</string>
+
+    <!--cert set sign free-->
+    <string name="cert_sign_pin_input">需要输入证书密码</string>
+    <string name="cert_sign_pin_sure">免密签名，需要确认</string>
+    <string name="cert_sign_pin_no">免密签名，不需要确认</string>
+
+    <string name="cert_rz">证书日志</string>
+
+    <!--电子签名-->
+    <string name="cert_sign">数字签名</string>
+    <string name="cert_push">推送签名</string>
+    <string name="cert_sign_tip">证书签名中…</string>
+    <string name="cert_sign_success">证书签名成功</string>
+    <string name="cert_sign_failed">证书签名失败</string>
+    <string name="cert_login">证书登录</string>
+    <string name="cert_login_tip">证书登录中…</string>
+    <string name="cert_login_success">证书登录成功</string>
+    <string name="cert_login_failed">证书登录失败</string>
+    <string name="cert_qrcode_error">二维码错误</string>
+
+
+    <!--mine-->
+    <string name="mine_title">个人信息</string>
+    <string name="mine_not_login">登录</string>
+    <string name="mine_not_nickname">手机号</string>
+    <string name="mine_auth">实名认证</string>
+    <string name="mine_safe">账户安全</string>
+    <string name="mine_seal">手写签名</string>
+    <string name="mine_msg">系统设置</string>
+    <string name="mine_about">关于我们</string>
+
+    <!--mine user-->
+    <string name="mine_user_avatar">头像</string>
+    <string name="mine_user_account">账户</string>
+    <string name="mine_user_name">姓名</string>
+    <string name="mine_user_id">身份证号</string>
+    <string name="mine_user_dept">我的机构</string>
+    <string name="mine_user_logout">退出登录</string>
+    <string name="mine_auth_completed">您已完成实名认证</string>
+    <string name="mine_image_err">图片获取失败</string>
+    <string name="mine_edit_success">修改成功</string>
+
+    <!--mine auth-->
+    <string name="auth_completed">您已完成实名认证</string>
+    <string name="auth_id_tip">请正确填写，完成身份认证</string>
+    <string name="auth_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="auth_name_hint">请输入真实姓名</string>
+    <string name="auth_id_type">证件类型</string>
+    <string name="auth_id_type_hint">请选择证件类型</string>
+    <string name="auth_id">证件号码</string>
+    <string name="auth_id_hint">请输入证件号码</string>
+    <string name="auth_id_err">证件号码有误</string>
+    <string name="auth_submit">提交</string>
+    <string name="auth_no_tip">使用此功能之前，您须先完成实名认证，点击确定开始认证。</string>
+
+    <!--mine seal-->
+    <string name="seal_info">手写签名信息</string>
+    <string name="seal_add">添加签名</string>
+    <string name="seal_update">更新签名</string>
+    <string name="seal_update_success">更新签名成功</string>
+    <string name="seal_write">手写签名</string>
+    <string name="seal_color">笔迹颜色:</string>
+    <string name="seal_threshold">调整阈值:</string>
+    <string name="seal_pen">笔迹直径:</string>
+    <string name="seal_deal">印章处理</string>
+
+    <!--mine_safe-->
+    <string name="mine_safe_pin">密码安全</string>
+    <string name="mine_safe_pin_change">更改登录密码</string>
+
+    <string name="mine_safe_type">快捷登录</string>
+    <string name="mine_safe_lock">手势密码</string>
+    <string name="mine_safe_finger">指纹登录</string>
+    <string name="mine_safe_finger_tip">指纹设置</string>
+
+    <string name="mine_safe_account">账号管理</string>
+    <string name="mine_safe_base_wchat">微信</string>
+    <string name="mine_safe_re_bind">已绑定</string>
+    <string name="mine_safe_no_bind">未绑定</string>
+    <string name="mine_safe_wechat_band">绑定微信</string>
+    <string name="mine_safe_wechat_change">更换</string>
+    <string name="mine_safe_wechat_noband">解绑</string>
+
+    <!--mine safe change pin-->
+    <string name="safe_pin_input_old">请输入旧密码</string>
+    <string name="safe_pin_set_new">请输入新密码</string>
+    <string name="safe_pin_sure_new">确认新密码</string>
+    <string name="safe_pin_tip">密码设置8-16位数字与字母组合</string>
+
+    <!--mine safe change phone-->
+    <string name="safe_change_phone">修改手机</string>
+    <string name="safe_phone_old">您的手机号码</string>
+    <string name="safe_phone_msg_input">请输入短信验证码</string>
+    <string name="safe_phone_msg_get">获取短信验证码</string>
+    <string name="safe_phone_new_set">新的手机设置</string>
+    <string name="safe_phone_new_input">输入新的手机号</string>
+    <string name="safe_phone_code_old_tip">请输入现有手机号码验证码</string>
+    <string name="safe_phone_new_tip">请输入新手机号码</string>
+    <string name="safe_phone_code_new_tip">请输入新手机号码验证码</string>
+
+    <!--mine msg push-->
+    <string name="msg_push">消息推送</string>
+    <string name="msg_push_switch">是否开启消息推送</string>
+
+    <!--mine_about-->
+    <string name="about_build_update">版本更新</string>
+    <string name="about_support">技术支持：联通智慧安全科技有限公司</string>
+
+    <!--user image-->
+    <string name="upload_image">上传头像</string>
+    <string name="photo">从相片选取</string>
+    <string name="camera">相机</string>
+
+    <!--update-->
+    <string name="update_title">软件升级</string>
+    <string name="update_ok">马上升级</string>
+    <string name="update_cancel">暂不升级</string>
+    <string name="update_downing">正在下载升级包…</string>
+    <string name="update_already_latest">已经是最新版本</string>
+    <string name="update_server_error">获取服务器更新信息失败</string>
+    <string name="update_download_error">下载新版本失败</string>
+
+    <!-- 手势图案解锁 -->
+    <string name="lock_screen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lock_screen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lock_screen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lock_screen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+    <!--指纹登录-->
+    <string name="finger_set_tip">请先录入指纹</string>
+    <string name="finger_match">验证成功</string>
+    <string name="finger_not_match">验证失败</string>
+    <string name="finger_open_tip">请验证指纹以开启指纹解锁</string>
+    <string name="finger_close_tip">请验证指纹以关闭指纹解锁</string>
+    <string name="finger_verify_tip">请验证指纹进行指纹解锁</string>
+
+    <!--微信相关-->
+    <string name="wechat_bind_phone_tip">为了您的账号安全，请验证一个手机号</string>
+    <string name="wechat_bind_phone_title">验证手机</string>
+    <string name="wechat_bind_phone_error">绑定手机号失败</string>
+
+    <string name="update_content_info">1.更新内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；\n4.更新内容；\n5.更新内容啦；\n6.更新内容，赶紧查看；\n7.更新内容；\n8.更新内容啦；\n9.更新内容，赶紧查看；</string>
+    <string name="update_next">下次再说</string>
+    <string name="update_info">立即更新</string>
+    <!--fagment-->
+    <string name="first_page">招标资讯</string>
+    <string name="match">证书</string>
+    <string name="circle">通知</string>
+    <string name="data">服务</string>
+    <string name="my">我的</string>
+
+    <!--定位-->
+    <string name="located_city">定位城市</string>
+    <string name="hot_city">热门城市</string>
+    <string name="locating">正在定位...</string>
+    <string name="located_failed">定位失败</string>
+    <string name="located_web">中国投标网站</string>
+
+    <!--服务页面-->
+    <string name="service1">招标资讯</string>
+    <string name="service2">iPASS业务通知</string>
+    <string name="service3">推广服务</string>
+    <string name="service4">电子合同</string>
+    <string name="service5">展示服务</string>
+    <string name="service6">配置服务</string>
+</resources>

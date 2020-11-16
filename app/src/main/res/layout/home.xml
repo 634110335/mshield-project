@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/home_image"
+        android:scaleType="fitXY"
+        android:layout_height="240dp">
+    <RelativeLayout
+        android:id="@+id/home_scan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/login_login"
+            android:src="@mipmap/home_scan_bg"/>
+
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/login_login"
+            android:src="@mipmap/home_banner_bg"/>
+    </RelativeLayout>
+</LinearLayout>
